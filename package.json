@@ -8,9 +8,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "pk <pkrasam@gmail.com> (https://ipfs.infura.io/ipfs/QmSXiR9Khm3yo1J67nUopvVBxFJ8YGN2fUGZ34Etr3m92x/)",
+  "author": "harry ermawan <harryermawan@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "lite-server": "2.4.0"
+    "lite-server": "2.4.0",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.4.3"
   }
 }
