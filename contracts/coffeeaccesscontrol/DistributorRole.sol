@@ -6,10 +6,14 @@ import "./Roles.sol";
 
 // Define a contract 'DistributorRole' to manage this role - add, remove, check
 contract DistributorRole {
+  using Roles for Roles.Role;
 
   // Define 2 events, one for Adding, and other for Removing
+  event DistributorAdded(address indexed account);
+  event DistributorRemoved(address indexed account);
 
   // Define a struct 'distributors' by inheriting from 'Roles' library, struct Role
+  Roles.Role private distributors;
 
   // In the constructor make the address that deploys this contract the 1st distributor
   constructor() public {
@@ -18,13 +22,13 @@ contract DistributorRole {
 
   // Define a modifier that checks to see if msg.sender has the appropriate role
   modifier onlyDistributor() {
-
+    isDistributor(msg.sender);
     _;
   }
 
   // Define a function 'isDistributor' to check this role
   function isDistributor(address account) public view returns (bool) {
-
+    distributors.has(account);
   }
 
   // Define a function 'addDistributor' that adds this role
