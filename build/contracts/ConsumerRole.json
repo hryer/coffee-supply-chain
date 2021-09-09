@@ -459,7 +459,7 @@
   "sourceMap": "188:1106:1:-:0;;;444:31;;;;;;;;;;188:1106;;;;;;",
   "deployedSourceMap": "188:1106:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;795:68;;;;;;:::i;:::-;;;;;931:45;;;660:74;;;;;;:::i;:::-;-1:-1:-1;718:4:1;;660:74;;;;490:14:8;;483:22;465:41;;453:2;438:18;660:74:1;;;;;;;14:306:8;;126:2;114:9;105:7;101:23;97:32;94:2;;;147:6;139;132:22;94:2;178:23;;-1:-1:-1;;;;;230:31:8;;220:42;;210:2;;281:6;273;266:22;210:2;309:5;84:236;-1:-1:-1;;;84:236:8:o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.6.8;\n\n// Import the library 'Roles'\nimport \"./Roles.sol\";\n\n// Define a contract 'ConsumerRole' to manage this role - add, remove, check\ncontract ConsumerRole {\n\n  // Define 2 events, one for Adding, and other for Removing\n\n  // Define a struct 'consumers' by inheriting from 'Roles' library, struct Role\n\n  // In the constructor make the address that deploys this contract the 1st consumer\n  constructor() public {\n    \n  }\n\n  // Define a modifier that checks to see if msg.sender has the appropriate role\n  modifier onlyConsumer() {\n    \n    _;\n  }\n\n  // Define a function 'isConsumer' to check this role\n  function isConsumer(address account) public view returns (bool) {\n    \n  }\n\n  // Define a function 'addConsumer' that adds this role\n  function addConsumer(address account) public onlyConsumer {\n    \n  }\n\n  // Define a function 'renounceConsumer' to renounce this role\n  function renounceConsumer() public {\n    \n  }\n\n  // Define an internal function '_addConsumer' to add this role, called by 'addConsumer'\n  function _addConsumer(address account) internal {\n    \n  }\n\n  // Define an internal function '_removeConsumer' to remove this role, called by 'removeConsumer'\n  function _removeConsumer(address account) internal {\n    \n  }\n}",
-  "sourcePath": "/Users/hryer/Code/mooc/blockchain/FairTradeCoffee/contracts/coffeeaccesscontrol/ConsumerRole.sol",
+  "sourcePath": "/Users/hryer/Code/udacity/coffee-supply-chain/contracts/coffeeaccesscontrol/ConsumerRole.sol",
   "ast": {
     "absolutePath": "project:/contracts/coffeeaccesscontrol/ConsumerRole.sol",
     "exportedSymbols": {
@@ -467,7 +467,7 @@
         101
       ],
       "Roles": [
-        398
+        424
       ]
     },
     "id": 102,
@@ -492,7 +492,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 102,
-        "sourceUnit": 399,
+        "sourceUnit": 425,
         "src": "88:21:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -904,7 +904,7 @@
         101
       ],
       "Roles": [
-        398
+        424
       ]
     },
     "id": 102,
@@ -929,7 +929,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 102,
-        "sourceUnit": 399,
+        "sourceUnit": 425,
         "src": "88:21:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1339,8 +1339,8 @@
     "version": "0.8.2+commit.661d1103.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.2",
-  "updatedAt": "2021-08-21T19:46:35.579Z",
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-09-08T19:08:44.337Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
