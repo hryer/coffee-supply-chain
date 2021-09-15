@@ -297,6 +297,14 @@ contract SupplyChain is
     )
   {
     // Assign values to the 8 parameters
+    itemSKU = items[_upc].sku;
+    itemUPC = items[_upc].upc;
+    itemOwnerID = items[_upc].itemOwnerID;
+    originFarmerID = items[_upc].originFarmerID;
+    originFarmName = items[_upc].originFarmName;
+    originFarmInformation = items[_upc].originFarmInformation;
+    originFarmLatitude = items[_upc].originFarmLatitude;
+    originFarmLongitude = items[_upc].originFarmLongitude;
 
     return (
       itemSKU,
@@ -311,10 +319,7 @@ contract SupplyChain is
   }
 
   // Define a function 'fetchItemBufferTwo' that fetches the data
-  function fetchItemBufferTwo(uint256 _upc)
-    public
-    view
-    returns (
+  function fetchItemBufferTwo(uint256 _upc) public view returns (
       uint256 itemSKU,
       uint256 itemUPC,
       uint256 productID,
@@ -327,6 +332,15 @@ contract SupplyChain is
     )
   {
     // Assign values to the 9 parameters
+    itemSKU = items[_upc].sku;
+    itemUPC = items[_upc].upc;
+    productID = items[_upc].productID;
+    productNotes = items[_upc].productNotes;
+    productPrice = items[_upc].productPrice;
+    itemState = uint(items[_upc].itemState);
+    distributorID = items[_upc].distributorID;
+    retailerID = items[_upc].retailerID;
+    consumerID = items[_upc].consumerID;
 
     return (
       itemSKU,
