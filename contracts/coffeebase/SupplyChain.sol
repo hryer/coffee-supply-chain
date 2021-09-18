@@ -288,7 +288,7 @@ contract SupplyChain is
     returns (
       uint256 itemSKU,
       uint256 itemUPC,
-      address itemOwnerID,
+      address ownerID,
       address originFarmerID,
       string memory originFarmName,
       string memory originFarmInformation,
@@ -299,7 +299,7 @@ contract SupplyChain is
     // Assign values to the 8 parameters
     itemSKU = items[_upc].sku;
     itemUPC = items[_upc].upc;
-    itemOwnerID = items[_upc].itemOwnerID;
+    ownerID = items[_upc].itemOwnerID;
     originFarmerID = items[_upc].originFarmerID;
     originFarmName = items[_upc].originFarmName;
     originFarmInformation = items[_upc].originFarmInformation;
@@ -309,7 +309,7 @@ contract SupplyChain is
     return (
       itemSKU,
       itemUPC,
-      itemOwnerID,
+      ownerID,
       originFarmerID,
       originFarmName,
       originFarmInformation,
