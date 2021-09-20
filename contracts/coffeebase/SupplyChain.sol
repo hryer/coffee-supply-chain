@@ -233,7 +233,7 @@ contract SupplyChain is
   // Define a function 'buyItem' that allows the disributor to mark an item 'Sold'
   // Use the above defined modifiers to check if the item is available for sale, if the buyer has paid enough,
   // and any excess ether sent is refunded back to the buyer
-  function buyItem(uint256 _upc) public payable forSale(_upc) paidEnough(items[_upc].productPrice) onlyDistributor {
+  function buyItem(uint256 _upc) public payable forSale(_upc) paidEnough(items[_upc].productPrice) checkValue(_upc) onlyDistributor {
     // Update the appropriate fields - ownerID, distributorID, itemState
     items[_upc].itemOwnerID = msg.sender;
     items[_upc].distributorID = msg.sender;
@@ -343,15 +343,15 @@ contract SupplyChain is
     consumerID = items[_upc].consumerID;
 
     return (
-      itemSKU,
-      itemUPC,
-      productID,
-      productNotes,
-      productPrice,
-      itemState,
-      distributorID,
-      retailerID,
-      consumerID
+      itemSKU, //0
+      itemUPC, //1
+      productID, //2
+      productNotes, //3
+      productPrice, //4
+      itemState, //5
+      distributorID, //6
+      retailerID, //7
+      consumerID //8
     );
   }
 }
