@@ -56,6 +56,7 @@ contract SupplyChain is
     uint256 productID; // Product ID potentially a combination of upc + sku
     string productNotes; // Product Notes
     uint256 productPrice; // Product Price
+    string productImage; // Product Image
     State itemState; // Product State as represented in the enum above
     address distributorID; // Metamask-Ethereum address of the Distributor
     address retailerID; // Metamask-Ethereum address of the Retailer
@@ -71,6 +72,7 @@ contract SupplyChain is
   event Shipped(uint256 upc);
   event Received(uint256 upc);
   event Purchased(uint256 upc);
+  event SavedImage(uint256 upc);
 
   // Define a modifer that checks to see if msg.sender == owner of the contract
   modifier onlyContractOwner() {
@@ -165,6 +167,13 @@ contract SupplyChain is
     }
   }
 
+  // Added image to Contract String URL from IPFS
+  function addProductImage(uint _upc, string memory _productImage) public onlyFarmer {
+    items[_upc].productImage = _productImage;
+
+    emit SavedImage(_upc);
+  }
+
   // Define a function 'harvestItem' that allows a farmer to mark an item 'Harvested'
   function harvestItem(
     uint256 _upc,
@@ -187,6 +196,7 @@ contract SupplyChain is
       originFarmLongitude: _originFarmLongitude, // Farm Longitude
       productID: _upc + sku, // Product ID potentially a combination of upc + sku
       productNotes: _productNotes, // Product Notes
+      productImage: '', // Product Image
       productPrice: uint256(0), // Product Price
       itemState: State.Harvested, // Product State as represented in the enum above
       distributorID: address(0), // Metamask-Ethereum address of the Distributor
