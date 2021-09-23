@@ -74,7 +74,7 @@ App = {
         }
         // If no injected web3 instance is detected, fall back to Ganache
         else {
-            App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
+            App.web3Provider = new Web3.providers.HttpProvider('http://localhost:8545');
         }
 
         App.getMetaskAccountID();
@@ -131,6 +131,7 @@ App = {
 
         switch(processId) {
             case 1:
+                await App.addFarmer(event);
                 return await App.harvestItem(event);
                 break;
             case 2:
@@ -143,15 +144,18 @@ App = {
                 return await App.sellItem(event);
                 break;
             case 5:
+                await App.addDistributor(event);
                 return await App.buyItem(event);
                 break;
             case 6:
                 return await App.shipItem(event);
                 break;
             case 7:
+                await App.addRetailer(event);
                 return await App.receiveItem(event);
                 break;
             case 8:
+                await App.addConsumer(event);
                 return await App.purchaseItem(event);
                 break;
             case 9:
@@ -162,12 +166,65 @@ App = {
                 break;
             }
     },
+    addFarmer: function(event) {
+        event.preventDefault();
+        var processId = parseInt($(event.target).data('id'));
 
+        App.contracts.SupplyChain.deployed().then(function(instance) {
+            console.log(App.originFarmerID);
+            instance.addFarmer(App.originFarmerID);
+        }).then(function(result) {
+            $("#ftc-item").text(result);
+            console.log('FarmerAdded',result);
+        }).catch(function(err) {
+            console.log(err.message);
+        });
+    },
+    addDistributor: function(event) {
+        event.preventDefault();
+        var processId = parseInt($(event.target).data('id'));
+
+        App.contracts.SupplyChain.deployed().then(function(instance) {
+            instance.addDistributor(App.distributorID);
+        }).then(function(result) {
+            $("#ftc-item").text(result);
+            console.log('DistributorAdded',result);
+        }).catch(function(err) {
+            console.log(err.message);
+        });
+    },
+    addRetailer: function(event) {
+        event.preventDefault();
+        var processId = parseInt($(event.target).data('id'));
+
+        App.contracts.SupplyChain.deployed().then(function(instance) {
+            instance.addRetailer(App.retailerID);
+        }).then(function(result) {
+            $("#ftc-item").text(result);
+            console.log('RetailerAdded',result);
+        }).catch(function(err) {
+            console.log(err.message);
+        });
+    },
+    addConsumer: function(event) {
+        event.preventDefault();
+        var processId = parseInt($(event.target).data('id'));
+
+        App.contracts.SupplyChain.deployed().then(function(instance) {
+            instance.addConsumer(App.consumerID);
+        }).then(function(result) {
+            $("#ftc-item").text(result);
+            console.log('ConsumerAdded',result);
+        }).catch(function(err) {
+            console.log(err.message);
+        });
+    },
     harvestItem: function(event) {
         event.preventDefault();
         var processId = parseInt($(event.target).data('id'));
 
         App.contracts.SupplyChain.deployed().then(function(instance) {
+            console.log(App)
             return instance.harvestItem(
                 App.upc, 
                 App.metamaskAccountID, 
@@ -307,10 +364,12 @@ App = {
     ///    var processId = parseInt($(event.target).data('id'));
                         
         App.contracts.SupplyChain.deployed().then(function(instance) {
-          return instance.fetchItemBufferTwo.call(App.upc);
+            return instance.fetchItemBufferTwo.call(App.upc);
         }).then(function(result) {
+            console.log(result)
           $("#ftc-item").text(result);
           console.log('fetchItemBufferTwo', result);
+          console.log(result[3]);
         }).catch(function(err) {
           console.log(err.message);
         });
