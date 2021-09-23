@@ -107,6 +107,13 @@ App = {
             var SupplyChainArtifact = data;
             App.contracts.SupplyChain = TruffleContract(SupplyChainArtifact);
             App.contracts.SupplyChain.setProvider(App.web3Provider);
+
+            console.log("web3: ", web3);
+            console.log("web3 eth: ", web3.eth);
+            console.log("web3 eth defaultAccount: ", web3.eth.defaultAccount);
+            console.log("web3 eth accounts: ", web3.eth.accounts);
+
+            web3.eth.defaultAccount = web3.eth.accounts[0];
             
             App.fetchItemBufferOne();
             App.fetchItemBufferTwo();
@@ -198,6 +205,7 @@ App = {
         var processId = parseInt($(event.target).data('id'));
 
         App.contracts.SupplyChain.deployed().then(function(instance) {
+            console.log(App.retailerID)
             instance.addRetailer(App.retailerID);
         }).then(function(result) {
             $("#ftc-item").text(result);
@@ -224,7 +232,6 @@ App = {
         var processId = parseInt($(event.target).data('id'));
 
         App.contracts.SupplyChain.deployed().then(function(instance) {
-            console.log(App)
             return instance.harvestItem(
                 App.upc, 
                 App.metamaskAccountID, 
