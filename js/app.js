@@ -74,7 +74,7 @@ App = {
         }
         // If no injected web3 instance is detected, fall back to Ganache
         else {
-            App.web3Provider = new Web3.providers.HttpProvider('http://localhost:8545');
+            App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
         }
 
         App.getMetaskAccountID();
@@ -327,7 +327,8 @@ App = {
         var processId = parseInt($(event.target).data('id'));
 
         App.contracts.SupplyChain.deployed().then(function(instance) {
-            return instance.receiveItem(App.upc, {from: App.metamaskAccountID});
+            const walletValue = web3.toWei(3, "ether");
+            return instance.receiveItem(App.upc, {from: App.metamaskAccountID, gas: "220000", value: walletValue});
         }).then(function(result) {
             $("#ftc-item").text(result);
             console.log('receiveItem',result);

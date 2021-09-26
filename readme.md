@@ -25,34 +25,41 @@
 
 # *Prerequisites*
 
-# *Launch Ganache Local*
+## *Launch Ganache Local*
 ```
 ganache-cli -m "spirit supply whale amount human item harsh scare congress discover talent hamster"
 ```
 
-# 
-# *Migrate Contract into Rinkeby* 
+## *Migrate Contract into Rinkeby* 
 ```
 truffle migrate --network rinkeby
 ```
 
+## *Testing truffle code*
+```
+truffle test
+```
 ## Contract Creations ( Rinkeby )
 * FarmerRole
-    * TX : [0xd02a659209618cbb41a5b5770991c50d44d5b2c6008260155523303c46d67b99](https://rinkeby.etherscan.io/tx/0xd02a659209618cbb41a5b5770991c50d44d5b2c6008260155523303c46d67b99)
-    * Contract Address : [0xac24d686CE197DBd8606F940Ab7CDb0FE7aF1fA8](https://rinkeby.etherscan.io/address/0xac24d686CE197DBd8606F940Ab7CDb0FE7aF1fA8)
+    * TX : [0x1b2395624acac62a5dad5a16cab15b326be8d3c60aaf9d17f379f0197a1b2ae1](https://rinkeby.etherscan.io/tx/0x1b2395624acac62a5dad5a16cab15b326be8d3c60aaf9d17f379f0197a1b2ae1)
+    * Contract Address : [0x24D79082085Ae98B131D0c6B8D1C8E5cC71DD3aF](https://rinkeby.etherscan.io/address/0x24D79082085Ae98B131D0c6B8D1C8E5cC71DD3aF)
 
 * DistributorRole
-    * TX : [0x62cfdc8cc73c4761459c48b9d2002ba89b447c2767465ef60a0a052ec1cbeba6](https://rinkeby.etherscan.io/tx/0x62cfdc8cc73c4761459c48b9d2002ba89b447c2767465ef60a0a052ec1cbeba6)
-    * Contract Address : [0xaE90Cf2c36E6ecB6eAB648a751045dBc1f471cEE](https://rinkeby.etherscan.io/address/0xaE90Cf2c36E6ecB6eAB648a751045dBc1f471cEE)
+    * TX : [0x1cdfd110a64021c0d7f327d90c3907a88f330b9ffa732d702939c830eb3a3ab5](https://rinkeby.etherscan.io/tx/0x1cdfd110a64021c0d7f327d90c3907a88f330b9ffa732d702939c830eb3a3ab5)
+    * Contract Address : [0x5A3C37D1372a9E0fB140E1D2DfDD933b31f05CBf](https://rinkeby.etherscan.io/address/0x5A3C37D1372a9E0fB140E1D2DfDD933b31f05CBf)
 
 * RetailerRole
-    * TX : [0x111a647705488996d151c33b0f865fe6909a87e162a7775204e5b570ec32c2be](https://rinkeby.etherscan.io/tx/0x111a647705488996d151c33b0f865fe6909a87e162a7775204e5b570ec32c2be)
-    * Contract Address : [0x5941487286C10A6D02565C1156e331403F32B6F0](https://rinkeby.etherscan.io/address/0x5941487286C10A6D02565C1156e331403F32B6F0)
+    * TX : [0xef72d7803351bc57ed13e243e22ec98dd31d44447fcb9144796f24dcc58235f8](https://rinkeby.etherscan.io/tx/0xef72d7803351bc57ed13e243e22ec98dd31d44447fcb9144796f24dcc58235f8)
+    * Contract Address : [0x4A1b1bF10d8DDb25414a2C4c09a378DE54d557e9](https://rinkeby.etherscan.io/address/0x4A1b1bF10d8DDb25414a2C4c09a378DE54d557e9)
 
 * ConsumerRole
-    * TX : [0x3666d73b8377ab245433b512ca29e8ce942775e8ca1aab1c7297ef8b7fa1ef14](https://rinkeby.etherscan.io/tx/0x3666d73b8377ab245433b512ca29e8ce942775e8ca1aab1c7297ef8b7fa1ef14)
-    * Contract Address : [0xEA89aF78f57f091471C34935c201C8C36b043643](https://rinkeby.etherscan.io/address/0xEA89aF78f57f091471C34935c201C8C36b043643)
+    * TX : [0x9f139ef746b12953d24aacfcac44355d6ddf0759cf948caff17b51a230c5e9bf](https://rinkeby.etherscan.io/tx/0x9f139ef746b12953d24aacfcac44355d6ddf0759cf948caff17b51a230c5e9bf)
+    * Contract Address : [0x0312Bae303B4608A52420C154389fBfEccddB1C7](https://rinkeby.etherscan.io/address/0x0312Bae303B4608A52420C154389fBfEccddB1C7)
 
 * SupplyChain
-    * TX : [0x98f8f49f9ab384406bdfd90a1ab824bc4943f7ba5188c2236697ffcb23405ae4](https://rinkeby.etherscan.io/tx/0x98f8f49f9ab384406bdfd90a1ab824bc4943f7ba5188c2236697ffcb23405ae4)
-    * Contract Address : [0x3a44E4ee80308B074A1BF45809829D1258304DFF](https://rinkeby.etherscan.io/address/0x3a44E4ee80308B074A1BF45809829D1258304DFF)
+    * TX : [0xce79a2fc5db0dfdb030ea9d0fcf1b8a083bd2cc23955f0199fe5b0e2a1788f57](https://rinkeby.etherscan.io/tx/0xce79a2fc5db0dfdb030ea9d0fcf1b8a083bd2cc23955f0199fe5b0e2a1788f57)
+    * Contract Address : [0x18489712ae1797F76Da2d1723CB9a540265eA444](https://rinkeby.etherscan.io/address/0x18489712ae1797F76Da2d1723CB9a540265eA444)
+
+* Ownable
+    * TX : [0xa4a69288b6011e984dd763530346384d750ddd73151636f98802e4e3f78a9425](https://rinkeby.etherscan.io/tx/0xa4a69288b6011e984dd763530346384d750ddd73151636f98802e4e3f78a9425)
+    * Contract Address : [0x385C5910e38D5638E9eaAfF938E7E8FE231D0462](https://rinkeby.etherscan.io/address/0x385C5910e38D5638E9eaAfF938E7E8FE231D0462)
