@@ -73,9 +73,9 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.2+commit.661d1103\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"DistributorAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"DistributorRemoved\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addDistributor\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isDistributor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceDistributor\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/coffeeaccesscontrol/DistributorRole.sol\":\"DistributorRole\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/coffeeaccesscontrol/DistributorRole.sol\":{\"keccak256\":\"0xb4fc7f0965afa16b0205e2b8ac057815814fbc3cf7ea71a7655a4d6b144a16b6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9d421c552bdd89d0438bfa41045f9f3a6f462562d6e3c8807187e9ad6e96df07\",\"dweb:/ipfs/QmXqpbopVSePVW85oVAdHqGskJ2XfxBbdv6geSg3LuZ4h4\"]},\"project:/contracts/coffeeaccesscontrol/Roles.sol\":{\"keccak256\":\"0x99fb2183ffa72037e8dacab59ac6bb1a116be26f7fc3b80a5172bda2f344e026\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2c683163cc089345eb44945b5cae6705f4c1db6098c6f76798315d015b60749a\",\"dweb:/ipfs/QmTzK5i8hbcnLqADSBFWh9rgXnhPVmpaTLhMqfYGXeUn3X\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5061001a3361001f565b6100ef565b61003781600061006e60201b6100bd1790919060201c565b6040516001600160a01b038216907fddbf200aa634dc3fb81cfd68583dd1040d1c751d335e1d86b631bde3e977fea890600090a250565b6001600160a01b03811661008157600080fd5b61008b82826100ba565b1561009557600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19166001179055565b60006001600160a01b0382166100cf57600080fd5b506001600160a01b03166000908152602091909152604090205460ff1690565b61026e806100fe6000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063644241db146100465780637250e224146100505780638f0c86fa14610063575b600080fd5b61004e61008a565b005b61004e61005e36600461020a565b610095565b61007661007136600461020a565b6100ab565b604051901515815260200160405180910390f35b61009333610109565b565b61009e336100ab565b506100a88161014b565b50565b60006100b7818361018d565b92915050565b6001600160a01b0381166100d057600080fd5b6100da828261018d565b156100e457600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19166001179055565b6101146000826101c2565b6040516001600160a01b038216907f126174f6cf49c81cdb4a9214c6b8f037bef55b4ec31e4fc776cea2a1c8a88d5990600090a250565b6101566000826100bd565b6040516001600160a01b038216907fddbf200aa634dc3fb81cfd68583dd1040d1c751d335e1d86b631bde3e977fea890600090a250565b60006001600160a01b0382166101a257600080fd5b506001600160a01b03166000908152602091909152604090205460ff1690565b6001600160a01b0381166101d557600080fd5b6101df828261018d565b6101e857600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19169055565b60006020828403121561021b578081fd5b81356001600160a01b0381168114610231578182fd5b939250505056fea2646970667358221220686beb2eb04d26aced03175951574cc1ddd7d11580fc4c007a3f09150c1b72a264736f6c63430008020033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c8063644241db146100465780637250e224146100505780638f0c86fa14610063575b600080fd5b61004e61008a565b005b61004e61005e36600461020a565b610095565b61007661007136600461020a565b6100ab565b604051901515815260200160405180910390f35b61009333610109565b565b61009e336100ab565b506100a88161014b565b50565b60006100b7818361018d565b92915050565b6001600160a01b0381166100d057600080fd5b6100da828261018d565b156100e457600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19166001179055565b6101146000826101c2565b6040516001600160a01b038216907f126174f6cf49c81cdb4a9214c6b8f037bef55b4ec31e4fc776cea2a1c8a88d5990600090a250565b6101566000826100bd565b6040516001600160a01b038216907fddbf200aa634dc3fb81cfd68583dd1040d1c751d335e1d86b631bde3e977fea890600090a250565b60006001600160a01b0382166101a257600080fd5b506001600160a01b03166000908152602091909152604090205460ff1690565b6001600160a01b0381166101d557600080fd5b6101df828261018d565b6101e857600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19169055565b60006020828403121561021b578081fd5b81356001600160a01b0381168114610231578182fd5b939250505056fea2646970667358221220686beb2eb04d26aced03175951574cc1ddd7d11580fc4c007a3f09150c1b72a264736f6c63430008020033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"DistributorAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"DistributorRemoved\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addDistributor\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isDistributor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceDistributor\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/coffeeaccesscontrol/DistributorRole.sol\":\"DistributorRole\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/coffeeaccesscontrol/DistributorRole.sol\":{\"keccak256\":\"0xb4fc7f0965afa16b0205e2b8ac057815814fbc3cf7ea71a7655a4d6b144a16b6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9d421c552bdd89d0438bfa41045f9f3a6f462562d6e3c8807187e9ad6e96df07\",\"dweb:/ipfs/QmXqpbopVSePVW85oVAdHqGskJ2XfxBbdv6geSg3LuZ4h4\"]},\"project:/contracts/coffeeaccesscontrol/Roles.sol\":{\"keccak256\":\"0x99fb2183ffa72037e8dacab59ac6bb1a116be26f7fc3b80a5172bda2f344e026\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2c683163cc089345eb44945b5cae6705f4c1db6098c6f76798315d015b60749a\",\"dweb:/ipfs/QmTzK5i8hbcnLqADSBFWh9rgXnhPVmpaTLhMqfYGXeUn3X\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061001a3361001f565b6100ef565b61003781600061006e60201b6100bd1790919060201c565b6040516001600160a01b038216907fddbf200aa634dc3fb81cfd68583dd1040d1c751d335e1d86b631bde3e977fea890600090a250565b6001600160a01b03811661008157600080fd5b61008b82826100ba565b1561009557600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19166001179055565b60006001600160a01b0382166100cf57600080fd5b506001600160a01b03166000908152602091909152604090205460ff1690565b61026e806100fe6000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063644241db146100465780637250e224146100505780638f0c86fa14610063575b600080fd5b61004e61008a565b005b61004e61005e36600461020a565b610095565b61007661007136600461020a565b6100ab565b604051901515815260200160405180910390f35b61009333610109565b565b61009e336100ab565b506100a88161014b565b50565b60006100b7818361018d565b92915050565b6001600160a01b0381166100d057600080fd5b6100da828261018d565b156100e457600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19166001179055565b6101146000826101c2565b6040516001600160a01b038216907f126174f6cf49c81cdb4a9214c6b8f037bef55b4ec31e4fc776cea2a1c8a88d5990600090a250565b6101566000826100bd565b6040516001600160a01b038216907fddbf200aa634dc3fb81cfd68583dd1040d1c751d335e1d86b631bde3e977fea890600090a250565b60006001600160a01b0382166101a257600080fd5b506001600160a01b03166000908152602091909152604090205460ff1690565b6001600160a01b0381166101d557600080fd5b6101df828261018d565b6101e857600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19169055565b60006020828403121561021b578081fd5b81356001600160a01b0381168114610231578182fd5b939250505056fea2646970667358221220d2823a9b5f882fb2d7c424798f434022f375b4d10ca6ba3388a9817516a86ab664736f6c63430008040033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c8063644241db146100465780637250e224146100505780638f0c86fa14610063575b600080fd5b61004e61008a565b005b61004e61005e36600461020a565b610095565b61007661007136600461020a565b6100ab565b604051901515815260200160405180910390f35b61009333610109565b565b61009e336100ab565b506100a88161014b565b50565b60006100b7818361018d565b92915050565b6001600160a01b0381166100d057600080fd5b6100da828261018d565b156100e457600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19166001179055565b6101146000826101c2565b6040516001600160a01b038216907f126174f6cf49c81cdb4a9214c6b8f037bef55b4ec31e4fc776cea2a1c8a88d5990600090a250565b6101566000826100bd565b6040516001600160a01b038216907fddbf200aa634dc3fb81cfd68583dd1040d1c751d335e1d86b631bde3e977fea890600090a250565b60006001600160a01b0382166101a257600080fd5b506001600160a01b03166000908152602091909152604090205460ff1690565b6001600160a01b0381166101d557600080fd5b6101df828261018d565b6101e857600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19169055565b60006020828403121561021b578081fd5b81356001600160a01b0381168114610231578182fd5b939250505056fea2646970667358221220d2823a9b5f882fb2d7c424798f434022f375b4d10ca6ba3388a9817516a86ab664736f6c63430008040033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [
@@ -484,7 +484,7 @@
     }
   ],
   "sourceMap": "191:1598:2:-:0;;;625:59;;;;;;;;;-1:-1:-1;652:27:2;668:10;652:15;:27::i;:::-;191:1598;;1424:123;1481:25;1498:7;1481:12;:16;;;;;;:25;;;;:::i;:::-;1517;;-1:-1:-1;;;;;1517:25:2;;;;;;;;1424:123;:::o;276:167:5:-;-1:-1:-1;;;;;348:21:5;;340:30;;;;;;385:18;389:4;395:7;385:3;:18::i;:::-;384:19;376:28;;;;;;-1:-1:-1;;;;;411:20:5;:11;:20;;;;;;;;;;;:27;;-1:-1:-1;;411:27:5;434:4;411:27;;;276:167::o;757:166::-;841:4;-1:-1:-1;;;;;863:21:5;;855:30;;;;;;-1:-1:-1;;;;;;898:20:5;:11;:20;;;;;;;;;;;;;;;757:166::o;191:1598:2:-;;;;;;;",
-  "deployedSourceMap": "191:1598:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1245:79;;;:::i;:::-;;1075:99;;;;;;:::i;:::-;;:::i;901:110::-;;;;;;:::i;:::-;;:::i;:::-;;;490:14:8;;483:22;465:41;;453:2;438:18;901:110:2;;;;;;;1245:79;1289:30;1308:10;1289:18;:30::i;:::-;1245:79::o;1075:99::-;802:25;816:10;802:13;:25::i;:::-;;1145:24:::1;1161:7;1145:15;:24::i;:::-;1075:99:::0;:::o;901:110::-;962:4;981:25;962:4;998:7;981:16;:25::i;:::-;974:32;901:110;-1:-1:-1;;901:110:2:o;276:167:5:-;-1:-1:-1;;;;;348:21:5;;340:30;;;;;;385:18;389:4;395:7;385:3;:18::i;:::-;384:19;376:28;;;;;;-1:-1:-1;;;;;411:20:5;:11;:20;;;;;;;;;;;:27;;-1:-1:-1;;411:27:5;434:4;411:27;;;276:167::o;1656:131:2:-;1716:28;:12;1736:7;1716:19;:28::i;:::-;1755:27;;-1:-1:-1;;;;;1755:27:2;;;;;;;;1656:131;:::o;1424:123::-;1481:25;:12;1498:7;1481:16;:25::i;:::-;1517;;-1:-1:-1;;;;;1517:25:2;;;;;;;;1424:123;:::o;757:166:5:-;841:4;-1:-1:-1;;;;;863:21:5;;855:30;;;;;;-1:-1:-1;;;;;;898:20:5;:11;:20;;;;;;;;;;;;;;;757:166::o;509:170::-;-1:-1:-1;;;;;584:21:5;;576:30;;;;;;620:18;624:4;630:7;620:3;:18::i;:::-;612:27;;;;;;-1:-1:-1;;;;;646:20:5;669:5;646:20;;;;;;;;;;;:28;;-1:-1:-1;;646:28:5;;;509:170::o;14:306:8:-;;126:2;114:9;105:7;101:23;97:32;94:2;;;147:6;139;132:22;94:2;178:23;;-1:-1:-1;;;;;230:31:8;;220:42;;210:2;;281:6;273;266:22;210:2;309:5;84:236;-1:-1:-1;;;84:236:8:o",
+  "deployedSourceMap": "191:1598:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1245:79;;;:::i;:::-;;1075:99;;;;;;:::i;:::-;;:::i;901:110::-;;;;;;:::i;:::-;;:::i;:::-;;;490:14:8;;483:22;465:41;;453:2;438:18;901:110:2;;;;;;;1245:79;1289:30;1308:10;1289:18;:30::i;:::-;1245:79::o;1075:99::-;802:25;816:10;802:13;:25::i;:::-;;1145:24:::1;1161:7;1145:15;:24::i;:::-;1075:99:::0;:::o;901:110::-;962:4;981:25;962:4;998:7;981:16;:25::i;:::-;974:32;901:110;-1:-1:-1;;901:110:2:o;276:167:5:-;-1:-1:-1;;;;;348:21:5;;340:30;;;;;;385:18;389:4;395:7;385:3;:18::i;:::-;384:19;376:28;;;;;;-1:-1:-1;;;;;411:20:5;:11;:20;;;;;;;;;;;:27;;-1:-1:-1;;411:27:5;434:4;411:27;;;276:167::o;1656:131:2:-;1716:28;:12;1736:7;1716:19;:28::i;:::-;1755:27;;-1:-1:-1;;;;;1755:27:2;;;;;;;;1656:131;:::o;1424:123::-;1481:25;:12;1498:7;1481:16;:25::i;:::-;1517;;-1:-1:-1;;;;;1517:25:2;;;;;;;;1424:123;:::o;757:166:5:-;841:4;-1:-1:-1;;;;;863:21:5;;855:30;;;;;;-1:-1:-1;;;;;;898:20:5;:11;:20;;;;;;;;;;;;;;;757:166::o;509:170::-;-1:-1:-1;;;;;584:21:5;;576:30;;;;;;620:18;624:4;630:7;620:3;:18::i;:::-;612:27;;;;;;-1:-1:-1;;;;;646:20:5;669:5;646:20;;;;;;;;;;;:28;;-1:-1:-1;;646:28:5;;;509:170::o;14:306:8:-;73:6;126:2;114:9;105:7;101:23;97:32;94:2;;;147:6;139;132:22;94:2;178:23;;-1:-1:-1;;;;;230:31:8;;220:42;;210:2;;281:6;273;266:22;210:2;309:5;84:236;-1:-1:-1;;;84:236:8:o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.6.8;\n\n// Import the library 'Roles'\nimport \"./Roles.sol\";\n\n// Define a contract 'DistributorRole' to manage this role - add, remove, check\ncontract DistributorRole {\n  using Roles for Roles.Role;\n\n  // Define 2 events, one for Adding, and other for Removing\n  event DistributorAdded(address indexed account);\n  event DistributorRemoved(address indexed account);\n\n  // Define a struct 'distributors' by inheriting from 'Roles' library, struct Role\n  Roles.Role private distributors;\n\n  // In the constructor make the address that deploys this contract the 1st distributor\n  constructor() public {\n    _addDistributor(msg.sender);\n  }\n\n  // Define a modifier that checks to see if msg.sender has the appropriate role\n  modifier onlyDistributor() {\n    isDistributor(msg.sender);\n    _;\n  }\n\n  // Define a function 'isDistributor' to check this role\n  function isDistributor(address account) public view returns (bool) {\n    return distributors.has(account);\n  }\n\n  // Define a function 'addDistributor' that adds this role\n  function addDistributor(address account) public onlyDistributor {\n    _addDistributor(account);\n  }\n\n  // Define a function 'renounceDistributor' to renounce this role\n  function renounceDistributor() public {\n    _removeDistributor(msg.sender);\n  }\n\n  // Define an internal function '_addDistributor' to add this role, called by 'addDistributor'\n  function _addDistributor(address account) internal {\n    distributors.add(account);\n    emit DistributorAdded(account);\n  }\n\n  // Define an internal function '_removeDistributor' to remove this role, called by 'removeDistributor'\n  function _removeDistributor(address account) internal {\n    distributors.remove(account);\n    emit DistributorRemoved(account);\n  }\n}",
   "sourcePath": "/Users/hryer/Code/coffee-supply-chain/contracts/coffeeaccesscontrol/DistributorRole.sol",
   "ast": {
@@ -1111,6 +1111,7 @@
             "modifiers": [
               {
                 "id": 216,
+                "kind": "modifierInvocation",
                 "modifierName": {
                   "id": 215,
                   "name": "onlyDistributor",
@@ -1641,7 +1642,8 @@
           }
         ],
         "scope": 266,
-        "src": "191:1598:2"
+        "src": "191:1598:2",
+        "usedErrors": []
       }
     ],
     "src": "32:1757:2"
@@ -2270,6 +2272,7 @@
             "modifiers": [
               {
                 "id": 216,
+                "kind": "modifierInvocation",
                 "modifierName": {
                   "id": 215,
                   "name": "onlyDistributor",
@@ -2800,58 +2803,32 @@
           }
         ],
         "scope": 266,
-        "src": "191:1598:2"
+        "src": "191:1598:2",
+        "usedErrors": []
       }
     ],
     "src": "32:1757:2"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.2+commit.661d1103.Emscripten.clang"
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
   },
   "networks": {
-    "4": {
+    "5777": {
       "events": {},
       "links": {},
-      "address": "0x5A3C37D1372a9E0fB140E1D2DfDD933b31f05CBf",
-      "transactionHash": "0x1cdfd110a64021c0d7f327d90c3907a88f330b9ffa732d702939c830eb3a3ab5"
+      "address": "0xfe5CF952Df1E42D4B8947CE626C17AcaBb5165F8",
+      "transactionHash": "0xcbccbba6cc276a0ee72661770dacce59ccb201daeb9ae202fca4d78bb7985191"
     },
-    "5777": {
-      "events": {
-        "0xddbf200aa634dc3fb81cfd68583dd1040d1c751d335e1d86b631bde3e977fea8": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            }
-          ],
-          "name": "DistributorAdded",
-          "type": "event"
-        },
-        "0x126174f6cf49c81cdb4a9214c6b8f037bef55b4ec31e4fc776cea2a1c8a88d59": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            }
-          ],
-          "name": "DistributorRemoved",
-          "type": "event"
-        }
-      },
+    "1632767650873": {
+      "events": {},
       "links": {},
-      "address": "0x5c97746BA3d166158A35304C8AEa89dd76D472f3",
-      "transactionHash": "0x9a60dc589db3a2febe5c1dbb4964d84a4e642f6fda8b62707c5f0e8695db8026"
+      "address": "0x263bCD7115f0dEFE906E7398ee35EA02DDA72a85",
+      "transactionHash": "0xd70664e215f1a8a6e036cddaf35256dc3ae420839a567af08e8fc3a336bf22c1"
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-09-26T11:48:08.000Z",
+  "updatedAt": "2021-09-27T18:34:36.161Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

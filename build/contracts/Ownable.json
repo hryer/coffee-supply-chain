@@ -74,9 +74,9 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.2+commit.661d1103\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"oldOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"TransferOwnership\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"getOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"constructor\":{\"notice\":\"Assign the contract to an owner\"},\"getOwner()\":{\"notice\":\"Look up the address of the owner\"},\"isOwner()\":{\"notice\":\"Check if the calling address is the owner of the contract\"},\"renounceOwnership()\":{\"notice\":\"Define a function to renounce ownerhip\"},\"transferOwnership(address)\":{\"notice\":\"Define a public function to transfer ownership\"}},\"notice\":\"Provides basic authorization control\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/coffeecore/Ownable.sol\":\"Ownable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/coffeecore/Ownable.sol\":{\"keccak256\":\"0x69d2e65f910d391a28408fc995a28064a275ad25a36f5e5efc7f953ed0b86700\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://14a8a11821ee98d84f016ce5f3d0b03e5707de9f6655259f4c71f784b3ea9442\",\"dweb:/ipfs/QmQaZFJ3sbsjAcJggypdkRFNkQnDXkBSzsgMsiXztN1MT2\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50600080546001600160a01b03191633178082556040516001600160a01b039190911691907f5c486528ec3e3f0ea91181cff8116f02bfa350e03b8b6f12e00765adbb5af85c908290a3610214806100696000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c8063715018a614610051578063893d20e81461005b5780638f32d59b1461007b578063f2fde38b1461009f575b600080fd5b6100596100b2565b005b6000546040516001600160a01b0390911681526020015b60405180910390f35b61008f6000546001600160a01b0316331490565b6040519015158152602001610072565b6100596100ad3660046101b0565b610119565b6100c66000546001600160a01b0316331490565b6100cf57600080fd5b600080546040516001600160a01b03909116907f5c486528ec3e3f0ea91181cff8116f02bfa350e03b8b6f12e00765adbb5af85c908390a3600080546001600160a01b0319169055565b61012d6000546001600160a01b0316331490565b61013657600080fd5b61013f81610142565b50565b6001600160a01b03811661015557600080fd5b600080546040516001600160a01b03808516939216917f5c486528ec3e3f0ea91181cff8116f02bfa350e03b8b6f12e00765adbb5af85c91a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000602082840312156101c1578081fd5b81356001600160a01b03811681146101d7578182fd5b939250505056fea2646970667358221220b26bb94ffa344eceb47099fdc975856b22e1b28b6714f87337699e7710d9ad0564736f6c63430008020033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c8063715018a614610051578063893d20e81461005b5780638f32d59b1461007b578063f2fde38b1461009f575b600080fd5b6100596100b2565b005b6000546040516001600160a01b0390911681526020015b60405180910390f35b61008f6000546001600160a01b0316331490565b6040519015158152602001610072565b6100596100ad3660046101b0565b610119565b6100c66000546001600160a01b0316331490565b6100cf57600080fd5b600080546040516001600160a01b03909116907f5c486528ec3e3f0ea91181cff8116f02bfa350e03b8b6f12e00765adbb5af85c908390a3600080546001600160a01b0319169055565b61012d6000546001600160a01b0316331490565b61013657600080fd5b61013f81610142565b50565b6001600160a01b03811661015557600080fd5b600080546040516001600160a01b03808516939216917f5c486528ec3e3f0ea91181cff8116f02bfa350e03b8b6f12e00765adbb5af85c91a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000602082840312156101c1578081fd5b81356001600160a01b03811681146101d7578182fd5b939250505056fea2646970667358221220b26bb94ffa344eceb47099fdc975856b22e1b28b6714f87337699e7710d9ad0564736f6c63430008020033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"oldOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"TransferOwnership\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"getOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"constructor\":{\"notice\":\"Assign the contract to an owner\"},\"getOwner()\":{\"notice\":\"Look up the address of the owner\"},\"isOwner()\":{\"notice\":\"Check if the calling address is the owner of the contract\"},\"renounceOwnership()\":{\"notice\":\"Define a function to renounce ownerhip\"},\"transferOwnership(address)\":{\"notice\":\"Define a public function to transfer ownership\"}},\"notice\":\"Provides basic authorization control\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/coffeecore/Ownable.sol\":\"Ownable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/coffeecore/Ownable.sol\":{\"keccak256\":\"0x69d2e65f910d391a28408fc995a28064a275ad25a36f5e5efc7f953ed0b86700\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://14a8a11821ee98d84f016ce5f3d0b03e5707de9f6655259f4c71f784b3ea9442\",\"dweb:/ipfs/QmQaZFJ3sbsjAcJggypdkRFNkQnDXkBSzsgMsiXztN1MT2\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50600080546001600160a01b0319163390811782556040519091907f5c486528ec3e3f0ea91181cff8116f02bfa350e03b8b6f12e00765adbb5af85c908290a36102028061005f6000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c8063715018a614610051578063893d20e81461005b5780638f32d59b1461007b578063f2fde38b14610099575b600080fd5b6100596100ac565b005b6000546040516001600160a01b0390911681526020015b60405180910390f35b6000546001600160a01b031633146040519015158152602001610072565b6100596100a736600461019e565b61010d565b6000546001600160a01b031633146100c357600080fd5b600080546040516001600160a01b03909116907f5c486528ec3e3f0ea91181cff8116f02bfa350e03b8b6f12e00765adbb5af85c908390a3600080546001600160a01b0319169055565b6000546001600160a01b0316331461012457600080fd5b61012d81610130565b50565b6001600160a01b03811661014357600080fd5b600080546040516001600160a01b03808516939216917f5c486528ec3e3f0ea91181cff8116f02bfa350e03b8b6f12e00765adbb5af85c91a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000602082840312156101af578081fd5b81356001600160a01b03811681146101c5578182fd5b939250505056fea26469706673582212209b08f4dfb1136ff381832073616eb174ae3943bac11208e5723e0dcc2e1b2ae364736f6c63430008040033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c8063715018a614610051578063893d20e81461005b5780638f32d59b1461007b578063f2fde38b14610099575b600080fd5b6100596100ac565b005b6000546040516001600160a01b0390911681526020015b60405180910390f35b6000546001600160a01b031633146040519015158152602001610072565b6100596100a736600461019e565b61010d565b6000546001600160a01b031633146100c357600080fd5b600080546040516001600160a01b03909116907f5c486528ec3e3f0ea91181cff8116f02bfa350e03b8b6f12e00765adbb5af85c908390a3600080546001600160a01b0319169055565b6000546001600160a01b0316331461012457600080fd5b61012d81610130565b50565b6001600160a01b03811661014357600080fd5b600080546040516001600160a01b03808516939216917f5c486528ec3e3f0ea91181cff8116f02bfa350e03b8b6f12e00765adbb5af85c91a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000602082840312156101af578081fd5b81356001600160a01b03811681146101c5578182fd5b939250505056fea26469706673582212209b08f4dfb1136ff381832073616eb174ae3943bac11208e5723e0dcc2e1b2ae364736f6c63430008040033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [
@@ -630,8 +630,8 @@
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "99:1358:7:-:0;;;299:109;;;;;;;;;-1:-1:-1;324:9:7;:22;;-1:-1:-1;;;;;;324:22:7;336:10;324:22;;;;361:40;;-1:-1:-1;;;;;391:9:7;;;;;324;361:40;;324:9;;361:40;99:1358;;;;;;",
-  "deployedSourceMap": "99:1358:7:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;883:147;;;:::i;:::-;;455:83;496:7;522:9;455:83;;-1:-1:-1;;;;;522:9:7;;;471:51:8;;459:2;444:18;455:83:7;;;;;;;;737:93;;777:4;814:9;-1:-1:-1;;;;;814:9:7;800:10;:23;;737:93;;;;698:14:8;;691:22;673:41;;661:2;646:18;737:93:7;628:92:8;1091:114:7;;;;;;:::i;:::-;;:::i;883:147::-;637:9;777:4;814:9;-1:-1:-1;;;;;814:9:7;800:10;:23;;737:93;637:9;629:18;;;;;;988:1:::1;969:9:::0;;951:40:::1;::::0;-1:-1:-1;;;;;969:9:7;;::::1;::::0;951:40:::1;::::0;988:1;;951:40:::1;1021:1;1001:22:::0;;-1:-1:-1;;;;;;1001:22:7::1;::::0;;883:147::o;1091:114::-;637:9;777:4;814:9;-1:-1:-1;;;;;814:9:7;800:10;:23;;737:93;637:9;629:18;;;;;;1170:28:::1;1189:8;1170:18;:28::i;:::-;1091:114:::0;:::o;1269:186::-;-1:-1:-1;;;;;1342:22:7;;1334:31;;;;;;1398:9;;;1380:38;;-1:-1:-1;;;;;1380:38:7;;;;1398:9;;;1380:38;;;1428:9;:20;;-1:-1:-1;;;;;;1428:20:7;-1:-1:-1;;;;;1428:20:7;;;;;;;;;;1269:186::o;14:306:8:-;;126:2;114:9;105:7;101:23;97:32;94:2;;;147:6;139;132:22;94:2;178:23;;-1:-1:-1;;;;;230:31:8;;220:42;;210:2;;281:6;273;266:22;210:2;309:5;84:236;-1:-1:-1;;;84:236:8:o",
+  "sourceMap": "99:1358:7:-:0;;;299:109;;;;;;;;;-1:-1:-1;324:9:7;:22;;-1:-1:-1;;;;;;324:22:7;336:10;324:22;;;;;361:40;;336:10;;324:9;361:40;;324:9;;361:40;99:1358;;;;;;",
+  "deployedSourceMap": "99:1358:7:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;883:147;;;:::i;:::-;;455:83;496:7;522:9;455:83;;-1:-1:-1;;;;;522:9:7;;;471:51:8;;459:2;444:18;455:83:7;;;;;;;;737:93;777:4;814:9;-1:-1:-1;;;;;814:9:7;800:10;:23;737:93;;698:14:8;;691:22;673:41;;661:2;646:18;737:93:7;628:92:8;1091:114:7;;;;;;:::i;:::-;;:::i;883:147::-;777:4;814:9;-1:-1:-1;;;;;814:9:7;800:10;:23;629:18;;;;;;988:1:::1;969:9:::0;;951:40:::1;::::0;-1:-1:-1;;;;;969:9:7;;::::1;::::0;951:40:::1;::::0;988:1;;951:40:::1;1021:1;1001:22:::0;;-1:-1:-1;;;;;;1001:22:7::1;::::0;;883:147::o;1091:114::-;777:4;814:9;-1:-1:-1;;;;;814:9:7;800:10;:23;629:18;;;;;;1170:28:::1;1189:8;1170:18;:28::i;:::-;1091:114:::0;:::o;1269:186::-;-1:-1:-1;;;;;1342:22:7;;1334:31;;;;;;1398:9;;;1380:38;;-1:-1:-1;;;;;1380:38:7;;;;1398:9;;;1380:38;;;1428:9;:20;;-1:-1:-1;;;;;;1428:20:7;-1:-1:-1;;;;;1428:20:7;;;;;;;;;;1269:186::o;14:306:8:-;73:6;126:2;114:9;105:7;101:23;97:32;94:2;;;147:6;139;132:22;94:2;178:23;;-1:-1:-1;;;;;230:31:8;;220:42;;210:2;;281:6;273;266:22;210:2;309:5;84:236;-1:-1:-1;;;84:236:8:o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.6.8;\n\n/// Provides basic authorization control\ncontract Ownable {\n    address private origOwner;\n\n    // Define an Event\n    event TransferOwnership(address indexed oldOwner, address indexed newOwner);\n\n    /// Assign the contract to an owner\n    constructor () {\n        origOwner = msg.sender;\n        emit TransferOwnership(address(0), origOwner);\n    }\n\n    /// Look up the address of the owner\n    function getOwner() public view returns (address) {\n        return origOwner;\n    }\n\n    /// Define a function modifier 'onlyOwner'\n    modifier onlyCurrentOwner() {\n        require(isOwner());\n        _;\n    }\n\n    /// Check if the calling address is the owner of the contract\n    function isOwner() public view returns (bool) {\n        return msg.sender == origOwner;\n    }\n\n    /// Define a function to renounce ownerhip\n    function renounceOwnership() public onlyCurrentOwner {\n        emit TransferOwnership(origOwner, address(0));\n        origOwner = address(0);\n    }\n\n    /// Define a public function to transfer ownership\n    function transferOwnership(address newOwner) public onlyCurrentOwner {\n        _transferOwnership(newOwner);\n    }\n\n    /// Define an internal function to transfer ownership\n    function _transferOwnership(address newOwner) internal {\n        require(newOwner != address(0));\n        emit TransferOwnership(origOwner, newOwner);\n        origOwner = newOwner;\n    }\n}\n",
   "sourcePath": "/Users/hryer/Code/coffee-supply-chain/contracts/coffeecore/Ownable.sol",
   "ast": {
@@ -1543,6 +1543,7 @@
             "modifiers": [
               {
                 "id": 1530,
+                "kind": "modifierInvocation",
                 "modifierName": {
                   "id": 1529,
                   "name": "onlyCurrentOwner",
@@ -1649,6 +1650,7 @@
             "modifiers": [
               {
                 "id": 1554,
+                "kind": "modifierInvocation",
                 "modifierName": {
                   "id": 1553,
                   "name": "onlyCurrentOwner",
@@ -2026,7 +2028,8 @@
           }
         ],
         "scope": 1588,
-        "src": "99:1358:7"
+        "src": "99:1358:7",
+        "usedErrors": []
       }
     ],
     "src": "32:1426:7"
@@ -2940,6 +2943,7 @@
             "modifiers": [
               {
                 "id": 1530,
+                "kind": "modifierInvocation",
                 "modifierName": {
                   "id": 1529,
                   "name": "onlyCurrentOwner",
@@ -3046,6 +3050,7 @@
             "modifiers": [
               {
                 "id": 1554,
+                "kind": "modifierInvocation",
                 "modifierName": {
                   "id": 1553,
                   "name": "onlyCurrentOwner",
@@ -3423,51 +3428,32 @@
           }
         ],
         "scope": 1588,
-        "src": "99:1358:7"
+        "src": "99:1358:7",
+        "usedErrors": []
       }
     ],
     "src": "32:1426:7"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.2+commit.661d1103.Emscripten.clang"
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
   },
   "networks": {
-    "4": {
+    "5777": {
       "events": {},
       "links": {},
-      "address": "0x385C5910e38D5638E9eaAfF938E7E8FE231D0462",
-      "transactionHash": "0xa4a69288b6011e984dd763530346384d750ddd73151636f98802e4e3f78a9425"
+      "address": "0xed5204c68269f07C9C3E3c9Bd280EE0B77cd2665",
+      "transactionHash": "0xc6514b2f2b77ff81d84ecaa6b36a395ee7e5575cc974495cbee66193faac24fb"
     },
-    "5777": {
-      "events": {
-        "0x5c486528ec3e3f0ea91181cff8116f02bfa350e03b8b6f12e00765adbb5af85c": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "oldOwner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "newOwner",
-              "type": "address"
-            }
-          ],
-          "name": "TransferOwnership",
-          "type": "event"
-        }
-      },
+    "1632767650873": {
+      "events": {},
       "links": {},
-      "address": "0xc81D6E837ea7f60665153fe58Bc5DE7C0fd3BDA8",
-      "transactionHash": "0x7cf9cb3a9728b0227bbb3e6fbe60eaea3f02fdbb1fbba1b05946f7f918e3ce0a"
+      "address": "0xbf5eD55F585F97ABE164714eBc712786C8644f2B",
+      "transactionHash": "0x3b3250a25f276a3ba8c1a0324258ab83a85719a4c3f946d127e287c0c00e2c53"
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-09-26T11:48:08.025Z",
+  "updatedAt": "2021-09-27T18:34:36.180Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

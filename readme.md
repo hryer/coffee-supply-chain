@@ -19,17 +19,41 @@
 - Solidity version >=0.6.8
 
 ## *Libraries*
-- @truffle/hdwallet-provider: "^1.4.3"
-- "dotenv": "^10.0.0"
-- "truffle-assertions": "^0.9.2"
+- @truffle/hdwallet-provider: "^1.4.3" <br>
+libraries for connecting to rinkeby & infura
 
-# *Prerequisites*
+- "dotenv": "^10.0.0" <br>
+libraries for the env
 
-## *Launch Ganache Local*
+- "truffle-assertions": "^0.9.2" <br>
+libraries testing smart contract with latest best practices
+# *Prerequisites & Steps*
+
+## *ask to the repository owner or use your env to try*
+- change `.env.example` into `.env` and fill it with your environments
+## *Launch Ganache Local or you can use Ganache GUI*
 ```
 ganache-cli -m "spirit supply whale amount human item harsh scare congress discover talent hamster"
 ```
 
+## *check your ganache port*
+```
+put your ganache port into .env
+```
+## *Delete build folder if any*
+```
+rm -rf build
+```
+
+## *Compile your smart contract*
+```
+
+truffle compile
+```
+## *Migrate Contract* 
+```
+truffle migrate --reset
+```
 ## *Migrate Contract into Rinkeby* 
 ```
 truffle migrate --network rinkeby
@@ -39,6 +63,9 @@ truffle migrate --network rinkeby
 ```
 truffle test
 ```
+![](/screenshoot/test.png)
+
+## *
 ## Contract Creations ( Rinkeby )
 * FarmerRole
     * TX : [0x1b2395624acac62a5dad5a16cab15b326be8d3c60aaf9d17f379f0197a1b2ae1](https://rinkeby.etherscan.io/tx/0x1b2395624acac62a5dad5a16cab15b326be8d3c60aaf9d17f379f0197a1b2ae1)
